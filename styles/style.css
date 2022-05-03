@@ -72,6 +72,10 @@ header {
     flex-direction: column;
 }
 
+#list {
+    background-color: rgb(171, 147, 193);
+}
+
 h2 {
     font-size: 1.8rem;
     font-weight: bold;

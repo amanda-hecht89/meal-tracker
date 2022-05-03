@@ -2,10 +2,13 @@
 const recipe = document.getElementById('list'); 
 const form = document.getElementById('ingredient-list');
 const button = document.getElementById('add');
+const remove = document.getElementById('remove');
+const listedingredients = document.getElementById('listed');
 
 // let state
 let ingredientArray = [];
 console.log(ingredientArray);
+let totalstuff = [];
 
 // set event listeners 
   // get user input
@@ -22,4 +25,8 @@ form.addEventListener('submit', (e) => {
     };
     ingredientArray.push(ingredients);
     console.log(ingredientArray);
+});
+
+remove.addEventListener('click', () => {
+    totalstuff.pop();
 });
