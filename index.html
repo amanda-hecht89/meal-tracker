@@ -21,10 +21,11 @@
     <main>
         <section class="main-section">
             <img class="main-logo" src="https://post.healthline.com/wp-content/uploads/2020/09/healthy-eating-ingredients-732x549-thumbnail.jpg" height="250">
-            <h2>
-                Add Ingredient
-            </h2>
+            
             <div class="ingredient-list">
+                <h2>
+                    Add Ingredient
+                </h2>
                 <label>
                     Type Of Food:
                     <input type="text" name="food" id="food"/>
@@ -35,11 +36,17 @@
                 </label>
                 <label>
                     Measurement
-                    <input type="text" name="measure" id="measure"/>
+                    <select id="measure">
+                        <option value="teaspoon">Teaspoon</option>
+                        <option value="tablespoon">Tablespoon</option>
+                        <option value="cup">Cup</option>
+                        <option value="pint">P</option>
+                        <option value="quart">Quart</option>
+                    </select>
                 </label>
                 <button id="add">Add To List</button>    
             </div>
-            
+
 
             <p>
             section 1
