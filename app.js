@@ -1,6 +1,13 @@
 // import functions and grab DOM elements
+const addIngredient = document.getElementById(food);
+const addQuantity = document.getElementById(amount);
+const addMeasure = document.getElementById(measure);
+
+const form = document.
+
 
 // let state
+
 
 // set event listeners 
   // get user input

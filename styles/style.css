@@ -61,15 +61,15 @@ header {
     box-shadow: var(--shadow);
 }
 
+.ingredients {
+    display: flex;
+    align-items: flex-start;
+    background-color: rgb(134, 189, 172);
+}
+
 .ingredient-list {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    background-color: rgb(67, 130, 110);
-}
-
-
-
 }
 
 h2 {
