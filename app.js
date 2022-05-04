@@ -5,6 +5,9 @@ const button = document.getElementById('add');
 const remove = document.getElementById('remove');
 const listedingredients = document.getElementById('listed');
 
+
+import { renderIngredient } from './utils.js';
+
 // let state
 let ingredientArray = [];
 console.log(ingredientArray);
@@ -35,7 +38,7 @@ remove.addEventListener('click', () => {
 });
 
 function displayingredients() {
-  listed.textcontent = '';
+    listedingredients.textcontent = '';
     for (let list of ingredientArray) {
         const li = renderIngredient(list);
         list.appendchild(li);
