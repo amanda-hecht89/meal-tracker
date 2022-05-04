@@ -4,7 +4,7 @@ const form = document.getElementById('ingredient-list');
 const button = document.getElementById('add');
 const remove = document.getElementById('remove');
 const listedingredients = document.getElementById('listed');
-
+const save = document.getElementById('save-meal');
 
 import { renderIngredient } from './utils.js';
 
@@ -50,3 +50,9 @@ function displayingredients() {
     //listedingredients.textcontent = '';
 //}
 
+save.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const mealData = new FormData(save);
+    let mealName = mealData.get('meal-button');
+    mealData.push(mealName);
+});
