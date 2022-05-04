@@ -45,8 +45,8 @@ function displayingredients() {
         listedingredients.appendChild(li);
     }
 }
-function displayingredients(list) {
-    const li  = document.createElement('li');
-    li.textContent = `${list.quantity} ${list.measurement} ${list.name}`;
-    return li;
-}
+//function displayingredients(list) {
+  //  const li  = document.createElement('li');
+    //li.textContent = `${list.quantity} ${list.measurement} ${list.name}`;
+    //return li;
+
