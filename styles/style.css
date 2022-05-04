@@ -72,6 +72,10 @@ header {
     flex-direction: column;
 }
 
+.save-meal-div {
+    background-color: rgb(227, 174, 108);
+}
+
 #list {
     background-color: rgb(171, 147, 193);
 }

@@ -26,7 +26,7 @@ form.addEventListener('submit', (e) => {
         quantity: totalList.get('amount'),
         measurement: totalList.get('measure'),
     };
-    ingredientArray.push(ingredients);
+    totalstuff.push(ingredients);
     console.log(ingredientArray);
 
     displayingredients();
@@ -40,13 +40,10 @@ remove.addEventListener('click', () => {
 
 function displayingredients() {
     listedingredients.textcontent = '';
-    for (let list of ingredientArray) {
+    for (let list of totalstuff) {
         const li = renderIngredient(list);
         listedingredients.appendChild(li);
     }
 }
-//function displayingredients(list) {
-  //  const li  = document.createElement('li');
-    //li.textContent = `${list.quantity} ${list.measurement} ${list.name}`;
-    //return li;
+
 
