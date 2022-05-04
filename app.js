@@ -5,12 +5,12 @@ const button = document.getElementById('add');
 const remove = document.getElementById('remove');
 const listedingredients = document.getElementById('listed');
 const save = document.getElementById('save-meal');
+const meal = document.getElementById('meal-input');
 
 import { renderIngredient } from './utils.js';
 
 // let state
-let ingredientArray = [];
-console.log(ingredientArray);
+let mealsArray = [];
 let totalstuff = [];
 
 // set event listeners 
@@ -27,7 +27,7 @@ form.addEventListener('submit', (e) => {
         measurement: totalList.get('measure'),
     };
     totalstuff.push(ingredients);
-    console.log(ingredientArray);
+  
 
     displayingredients();
     //form.reset();
@@ -50,9 +50,13 @@ function displayingredients() {
     //listedingredients.textcontent = '';
 //}
 
-save.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const mealData = new FormData(save);
-    let mealName = mealData.get('meal-button');
-    mealData.push(mealName);
+save.addEventListener('click', () => {
+    const mealName = meal.value;
+    const ingredcount = totalstuff.length;
+    mealsArray.push({ mealName, ingredcount });
+    renderMeals();
 });
+
+function renderMeals() {
+    
+}
