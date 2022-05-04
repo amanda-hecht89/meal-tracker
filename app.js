@@ -41,6 +41,6 @@ function displayingredients() {
     listedingredients.textcontent = '';
     for (let list of ingredientArray) {
         const li = renderIngredient(list);
-        list.appendchild(li);
+        listedingredients.appendChild(li);
     }
 }
