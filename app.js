@@ -35,6 +35,7 @@ form.addEventListener('submit', (e) => {
 
 remove.addEventListener('click', () => {
     totalstuff.pop();
+    displayingredients();
 });
 
 function displayingredients() {
