@@ -30,7 +30,7 @@ form.addEventListener('submit', (e) => {
     console.log(ingredientArray);
 
     displayingredients();
-    form.reset;
+    //form.reset();
 });
 
 remove.addEventListener('click', () => {
@@ -39,11 +39,14 @@ remove.addEventListener('click', () => {
 });
 
 function displayingredients() {
-    listedingredients.textcontent = '';
+    listedingredients.textContent = '';
     for (let list of totalstuff) {
         const li = renderIngredient(list);
         listedingredients.appendChild(li);
     }
 }
-
+//function resetIngredients() {
+  //  totalstuff = [];
+    //listedingredients.textcontent = '';
+//}
 
