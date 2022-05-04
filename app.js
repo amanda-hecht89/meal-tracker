@@ -25,8 +25,19 @@ form.addEventListener('submit', (e) => {
     };
     ingredientArray.push(ingredients);
     console.log(ingredientArray);
+
+    displayingredients();
+    form.reset;
 });
 
 remove.addEventListener('click', () => {
     totalstuff.pop();
 });
+
+function displayingredients() {
+  listed.textcontent = '';
+    for (let list of ingredientArray) {
+        const li = renderIngredient(list);
+        list.appendchild(li);
+    }
+}
