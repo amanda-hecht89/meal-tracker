@@ -59,8 +59,8 @@ save.addEventListener('click', () => {
 
 function renderMeals() {
     meal.textContent = '';
-    for (let listed of mealsArray) {
-        const li = renderMeals(listed);
-        listedingredients.append(li);
+    for (let meal of mealsArray) {
+        const li = renderMeals(meal);
+        meal.append(li);
     }
 }
