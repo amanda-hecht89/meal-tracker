@@ -80,6 +80,10 @@ header {
     background-color: rgb(171, 147, 193);
 }
 
+.meal-log-container {
+    background-color: rgb(131, 131, 227);
+}
+
 h2 {
     font-size: 1.8rem;
     font-weight: bold;

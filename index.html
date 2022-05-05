@@ -49,7 +49,8 @@
             </form>
         </div>
         <div id="list">
-            <ul id="listed" >List of Ingredients Here</ul>
+            <h2>List Of Ingredients Here!</h2>
+            <ul id="listed" ></ul>
             <button type="submit" id="remove">Remove Last Item</button>    
             </div>
             <div class="save-meal-div">
@@ -57,9 +58,14 @@
                     <h2>
                         Name of Recipe</h2>
                         <label>Recipe</label>
-                        <input name="recipe" id="recipe-name">
+                        <input type='text' name="recipe" id="recipe-name"/>
                         <button family="meal-button" id="meal-button">Save Recipe Here</button>
                 </div>
+            </div>
+            <div class="meal-log-container">
+                <h2>Recipe History</h2>
+                <ul  family="meal-track" id="history"></ul>
+
             </div>
 
         </section>
