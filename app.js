@@ -2,7 +2,7 @@
 const form = document.getElementById('ingredient-list');
 const remove = document.getElementById('remove');
 const listedingredients = document.getElementById('listed');
-const save = document.getElementById('save-meal');
+const save = document.getElementById('meal-button');
 const meal = document.getElementById('recipe-name');
 const history = document.getElementById('history');
 
@@ -55,6 +55,8 @@ save.addEventListener('click', () => {
     const ingredcount = totalstuff.length;
     mealsArray.push({ mealName, ingredcount });
     renderMeals();
+    console.log(renderMeals);
+    console.log(mealsArray);
 });
 
 function renderMeals() {
