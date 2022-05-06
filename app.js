@@ -9,6 +9,7 @@ const meal = document.getElementById('recipe-name');
 const history = document.getElementById('history');
 
 import { renderIngredient } from './utils.js';
+import { renderSoloMeal } from './utils.js';
 
 // let state
 let mealsArray = [];
@@ -61,7 +62,7 @@ save.addEventListener('click', () => {
 function renderMeals() {
     history.textContent = '';
     for (let meal of mealsArray) {
-        const li = renderMeals(meal);
+        const li = renderSoloMeal(meal);
         history.append(li);
     }
 }
