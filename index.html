@@ -20,47 +20,56 @@
     </header>
     <main>
         <section class="main-section">
-            <img class="main-logo" src="./assets/alchemy-logo.png" />
-            <h2>
-                Welcome to Alchemy Bootstrap!
-            </h2>
-
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
-            <hr />
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
-
+            <img class="main-logo" src="https://post.healthline.com/wp-content/uploads/2020/09/healthy-eating-ingredients-732x549-thumbnail.jpg" height="250">
+            
+            <div class="ingredients">
+                <h2>
+                    Add Ingredient
+                </h2>
+            <form id="ingredient-list">
+                <label>
+                    Type Of Food:
+                    <input type="text" name="food" id="food"/>
+                </label>
+                <label>
+                    Quantity:
+                    <input type="number" name="amount" id="amount"/>
+                </label>
+                <label>
+                    Measurement
+                    <select id="measure" name="measure">
+                        <option value="teaspoon">Teaspoon</option>
+                        <option value="tablespoon">Tablespoon</option>
+                        <option value="cup">Cup</option>
+                        <option value="pint">Pint</option>
+                        <option value="quart">Quart</option>
+                    </select>
+                </label>
+                <button type="submit" id="add">Add To List</button>
+            </form>
+            </div>
+        </section>
+        <section class="food">
+        <div id="list">
+            <h2>List Of Ingredients Here!</h2>
+            <ul id="listed" ></ul>
+            <button type="submit" id="remove">Remove Last Item</button>    
+        </div>
+            <div class="save-meal-div">
+                <div id="save-meal">
+                    <h2>
+                        Name of Recipe</h2>
+                        <label>Recipe</label>
+                        <input type='text' name="recipe" id="recipe-name"/>
+                        <button family="meal-button" id="meal-button">Save Recipe Here</button>
+                </div>
+            </section>
+            <section>    
+            </div>
+            <div class="meal-log-container">
+                <h2>Recipe History</h2>
+                <ul  family="meal-track" id="history"></ul>
+            </div>
         </section>
     </main>
     <footer>
