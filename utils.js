@@ -6,6 +6,6 @@ export function renderIngredient(list) {
 
 export function renderSoloMeal(meal) {
     const li = document.createElement('li');
-    li.textContent = `${meal.name} - ${meal.quantity} ingredients`;
+    li.textContent = `${meal.mealName} - ${meal.ingredcount} ingredients`;
     return li;
 }

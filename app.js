@@ -1,7 +1,5 @@
 // import functions and grab DOM elements
-const recipe = document.getElementById('list'); 
 const form = document.getElementById('ingredient-list');
-const button = document.getElementById('add');
 const remove = document.getElementById('remove');
 const listedingredients = document.getElementById('listed');
 const save = document.getElementById('save-meal');
@@ -66,3 +64,4 @@ function renderMeals() {
         history.append(li);
     }
 }
+//name="recipe" id="recipe-name"/>
