@@ -2,15 +2,10 @@
 body {
     /* feel free to update these css variables for a quick theme */
     
-    --color1: white;
-    --color2: white;
-    --color3: white;
-    --color4: white;
-    --color5: white;
     
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
         
-    /* --color1: hsla(349, 69%, 76%, 1);
+    /*--color1: hsla(349, 69%, 76%, 1);
     --color2: hsla(207, 67%, 44%, 1);
     --color3: hsla(200, 61%, 56%, 1);
     --color4: hsla(187, 41%, 94%, 1);
@@ -46,10 +41,6 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: var(--gutter);
-    padding-bottom: var(--gutter);
-    margin-top: var(--gutter);
-    margin-bottom: var(--gutter);
     border: solid 2px var(--color1);
 }
 
@@ -61,6 +52,28 @@ header {
     box-shadow: var(--shadow);
 }
 
+.ingredients {
+    display: flex;
+    align-items: flex-start;
+    background-color: rgb(134, 189, 172);
+}
+
+.ingredient-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.save-meal-div {
+    background-color: rgb(227, 174, 108);
+}
+
+#list {
+    background-color: rgb(171, 147, 193);
+}
+
+.meal-log-container {
+    background-color: rgb(131, 131, 227);
+}
 
 h2 {
     font-size: 1.8rem;
@@ -75,9 +88,6 @@ header img {
     height: var(--header-height);
 }
 
-p {
-    margin: var(--gutter);
-}
   
 footer {
     position: fixed;
